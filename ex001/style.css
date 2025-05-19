@@ -16,7 +16,7 @@ nav{
  text-align: right;
 }
 
-a{
+a.hdr{
     display: inline-flex;
     align-items: center;
     color: white;
@@ -28,7 +28,7 @@ a{
     
 }
 
-a::before{
+a.hdr::before{
     content: " ";
     color: #F25A70;
     background-color: #F25A70;
@@ -37,7 +37,7 @@ a::before{
     margin-right: 10px;
 }
 
-#button{
+.button{
     display: inline-flex;
     background-color: #F25A70;
     height: 60px;
@@ -45,11 +45,73 @@ a::before{
     padding: 0px 20px;
     box-shadow: 5px 5px 0px black;
     margin-right: 0px;
+    transition: transform 100ms linear;
+    font-family: 'Fira Code', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+
     
 }
 
-#button:hover{
+.button:hover{
     background-color: white;
     color: #F25A70;
-    transition: background-color .5s;
+    transform: scale(1.08);
+}
+
+
+
+h1{
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 40px;
+    color: #F25A70;
+    text-shadow: 4px 4px 0px black;
+}
+
+h2{
+    font-size: 30px;
+    font-family: 'Press Start 2P', sans-serif;
+    text-shadow: 4px 4px 0px black;
+    color: white;
+}
+
+.box{
+    display: inline-block;
+    background-color: #3a4042;
+    box-shadow: 10px 10px 0px black;
+    text-align: center;
+    padding: 42px 42px;
+}
+
+.box > h1 {
+    margin-bottom: 28px;
+}
+
+section.banner{
+    background-image: url(imagens/Banner\ \(1\).png);
+    height: 760px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid black;
+    padding-top: 115px;
+    padding-left: 90px;
+    box-sizing: border-box;
+   
+}
+
+    
+.banner > .wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+}
+
+.banner .box{
+    margin-bottom: 40px;
+}
+.banner > .navigation{
+    display: flex;
+    justify-content: space-around;
+    width: 
+    640px;
 }
