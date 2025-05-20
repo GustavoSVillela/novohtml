@@ -98,8 +98,7 @@ section.banner{
     box-sizing: border-box;
    
 }
-
-    
+ 
 .banner > .wrapper{
     display: flex;
     flex-direction: column;
@@ -115,3 +114,99 @@ section.banner{
     width: 
     640px;
 }
+
+.section > h2{
+    color: white;
+    text-shadow: none;
+    text-align: center;
+}
+
+.section{
+    background-color: #F25A70;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    border-bottom: 10px solid #7d5e99;
+}
+
+.wrapper-skill{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: auto;
+}
+
+.wrapper-skill .skill{
+    width: 430px;
+}
+
+.-space{
+    margin-right: 100px;
+}
+
+.wrapper-skill .progress-bar{
+    width: 320px;
+}
+
+
+
+.skill{
+    display: flex;
+    align-items: center;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+.skill .title{
+
+    margin: 16px 0px;
+}
+
+.icon{
+    margin-right: 25px;
+    width: 90px;
+}
+
+.progress-bar{
+    box-sizing: border-box;
+    background-color: white;
+    color: #7d5e99;
+    border: 5px solid black;
+    height: 40px;
+}
+
+.progress-bar::-webkit-progress-bar,
+.progress-bar::-webkit-progress-value {
+    width: 70%;
+    background-color: #AF60BC;
+}
+
+.progress-bar::-moz-progress-bar {
+    background-color: #AF60BC;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section2{
+    background-color: black;
+}
+.card-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7d5e99;
+    width: 280px; 
+    height: 280px;
+    box-shadow: 10px 10px 0px white;
+   
+}
+
+ .-blue{
+    background-color: #4C5B84;
+}
+
+
