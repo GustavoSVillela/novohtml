@@ -232,6 +232,9 @@ p{
     font-weight: 300;
     text-align: justify;
     line-height: 1.3;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
     
 }
 
@@ -241,6 +244,7 @@ p{
     background-color: #F25A70;
     box-shadow: 5px 5px 0px black;
     cursor: pointer;
+    
 }
 
 .button-arrow .content{
@@ -263,13 +267,21 @@ p{
 }
 
 .node-card{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .node-card::before{
-    content: 'a';
+    content: '';
+    height: 0;
+    width: 40px;
+    border: 2.5px dashed black;
+    transform: rotate(90deg) translateX(-62%);
+    position: absolute;
+    bottom: 0;
+    bottom: 140px;
 }
 .node-card .title1{
     font-family: 'Press Start 2P', sans-serif;
@@ -288,5 +300,81 @@ p{
     padding-left: 20px;
     padding-right: 20px;
     background-color: #CEB02A;
+
+}
+
+.-clean{
+    padding: 0;
+    border: 0;
+}
+
+.-rosa{
+    background-color: #F25A70;
+    height: 140px;
+}
+
+.collab{
+    height: 140px;
+}
+
+.carrosel{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+    overflow: hidden;
+}
+
+.carrosel > .button-arrow{
+    position: absolute;
+    bottom: 70px;
+    transform: translateY(50%);
+}
+
+.carrosel::after{
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    display: block;
+    height: 5px;
+    width: calc(100% - 80px);
+    background-color: black;
+
+}
+
+.carrosel::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    display: block;
+    border: 2.5px dashed black;
+    width: 99%;
+    right: 0;
+
+}
+
+.-left{
+    left: 15px;
+}
+
+.-right{
+    right: 15px;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transform: translateX();
+    overflow: hidden;
+}
+
+.elements{
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(100px);
 
 }
