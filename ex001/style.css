@@ -378,3 +378,62 @@ p{
     transition: transform 100ms ease-in-out;
 
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 28px 0px;
+}
+
+.action{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+form{
+    background-color: #3a4042;
+    font-size: 30px ;
+    font-weight: 300;
+    line-height: 40px;
+    padding: 0px 40px;
+}
+
+.main-label{
+    color: white;
+    
+
+}
+
+.main-ip{
+    box-sizing: content-box;
+    border: 5px solid black;
+    font-size: 30px;
+    height: 50px;
+    width: 100%;
+    padding: 0px 5px;
+    margin-bottom: 10px;
+}
+
+.-textarea{
+    height: 320px;
+}
+.-b2{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main-ip:last-of-type{
+    margin-bottom: 40px;
+}
+
+.-t2{
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 30px;
+    color: white;
+    text-shadow: 4px 4px 0px black;
+    text-align: center;
+    padding-top: 10px;
+}
+
